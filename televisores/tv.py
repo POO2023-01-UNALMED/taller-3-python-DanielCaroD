@@ -58,3 +58,8 @@ class TV:
     def volumenDown(self):
         if (self.estado == True and self.volumen > 0):
             self.volumen -= 1
+
+    def setNumTV(cls):
+        cls.numTV += 1
+    def getNumTV(cls):
+        return cls.numTV
